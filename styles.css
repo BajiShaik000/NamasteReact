@@ -1,80 +1,143 @@
-#heading {
-    color: red;
-}
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.main{
+.header{
     display: flex;
-    flex-direction: row;
-    padding: 10px;
-    background-color: aqua;
-}
-
-.item-1{
-    flex: 1;
-}
-
-.item-2{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:flex-start;
-}
-
-.item-3{
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
+    justify-content: space-between;
+    margin: 10px;
+    width: auto;
+    background-color: rgb(1, 163 , 144);
+    border-radius: 5px;
+    box-shadow: -1px 4px 20px 14px rgba(0,0,0,0.2);
+    color: black;
+    font-weight: bold;
 }
 
 .logo{
-    width: 30px;
-    height: 30x;
+    padding: 10px;
+    width: 100px;
     border-radius: 50%;
+}
+
+.logo:hover{
+    transform: scale(1.01);
+    background-color: #f4e566;
+    padding: 20px;
+}
+
+.nav-items {
+    padding: 0 10px 0;
+    width: auto;
+}
+
+.nav-items>ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-items>ul>li{
+    padding: 20px 40px;
+    margin-top: 20px;
     cursor: pointer;
-}
-
-.logo:hover, .user:hover {
-    transform: scale(1.50);
-    background-color: #f8f8f8;
-}
-
-.user{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-.item-2 .input{
-    border: none;
-    width:70%;
-    padding: 10px 5px;
+    font-size: larger;
+    margin-right: 20px;
+    color:#f5f5f5;
     border-radius: 10px;
-    margin-right: 10px;
 }
 
-.item-2 .input:focus {
-    outline: none;
-    border: 2px solid #f4e567;
+
+.nav-items>ul>li:hover{
+    background-color: grey;
+    color: #f4e566;
 }
 
-.item-2 button{
-    background-color: blueviolet;
+.restaurant-list{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: -1px 4px 20px 14px rgba(0,0,0,0.2);
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.card>img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card>img:hover{
+    transform: scale(1.02);
+}
+
+.card > span{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.card > span > h4{
+    text-align: center;
+}
+
+.card > span> h4:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(19,176,1);
+    padding: 4px 10px 5px;
+    border-radius: 5px;
     color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
-.item-2 button:hover{
-    background-color: rgba(137, 43, 226, 0.596);
-    transform: scale(1.08);
+.card > span> h4:first-child:hover{
+    transform: scale(1.10);
+    background-color: rgb(1, 163 , 144);
+    color: #f4e566;
+}
+
+.card h3{
+    text-align: center;
+    color: goldenrod;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.card>h4{
+    text-align: center;
+    color:rgba(127, 214, 255, 0.925);
+    margin-bottom: 10px;
+    font-style: italic;
+    overflow:hidden;
+}
+
+.card > span> h4:not(:first-child){
+    color: #f4e566;
+}
+
+.footer{
+    margin: 20px 0 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: bisque;
+    color: blue;
 }
