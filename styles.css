@@ -163,3 +163,55 @@
     border-radius: 10px;
   }
 }
+
+.filter{
+  margin: 20px;
+  padding: 15px;
+  background-color: green;
+  color: whitesmoke;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.filter:hover{
+  transform: scale(0.98);
+  background-color: #008000ad;
+}
+
+.secondary-bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search{
+  margin-left: 400px;
+}
+
+.search .search-input{
+  margin: 20px;
+  padding:  7px 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  width:300px
+}
+
+.search .search-input:active, .search .search-input:focus{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.search button{
+  padding: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: aqua;
+}
+
+.search button:hover{
+  transform: scale(1.1);
+}
