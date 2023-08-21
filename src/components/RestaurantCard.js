@@ -16,8 +16,8 @@ const RestarauntCard = ({
                     cloudinaryImageId
                 }
             />
-            <h3>{name}</h3>
-            <h4>{cuisines.join(",")}</h4>
+            <h3>{name.substr(0,25)}</h3>
+            <h4>{cuisines.join(",").substr(0,25)+"..."}</h4>
             <span>
                 <h4 style={(avgRating < 4) ? {backgroundColor:"red"}:null}>☆  {avgRating}</h4>
                 <h4>{sla.lastMileTravelString}</h4>

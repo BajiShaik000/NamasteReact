@@ -8,7 +8,7 @@ const About = () => {
                 height: "76vh"
             }
         }>
-            <h1>About page</h1>
+            <h1>Foodie Corner @ Satisfy your soul</h1>
         </div>
     )
 }
