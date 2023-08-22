@@ -20,7 +20,6 @@
   top: 0;
   left: 0;
   z-index: 999;
-  width: 98.8vw;
   overflow-y: hidden;
 }
 
@@ -55,8 +54,8 @@
 }
 
 .nav-items > ul > li {
-  padding: 10px 40px;
-  margin: 10px;
+  padding: 10px 20px;
+  margin: 10px 5px;
   cursor: pointer;
   font-size: larger;
   margin-right: 20px;
@@ -456,4 +455,11 @@ a {
   height: 100%;
   object-fit: fill;
   border-radius: 20px;
+}
+
+.user-card{
+  padding: 10px;
+  border: 1px solid black;
+  margin-top: 30px;
+  padding: 10px;
 }

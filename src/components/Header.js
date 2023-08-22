@@ -1,8 +1,10 @@
 import Title from "./Title";
 import { useState } from "react";
 import { Link } from 'react-router-dom';
+import {useOnlineStatus} from "../utils/useOnlineStatus";
 const Header = () => {
     const [value, setValue] = useState(false);
+    const onlineStatus = useOnlineStatus();
     return (
         <div className='header'>
             <div className="title">
@@ -15,6 +17,7 @@ const Header = () => {
                     <li><Link to='/about'>About</Link></li>
                     <li><Link to='/contact'>Contact</Link></li>
                     <li><Link to='/cart'><i className='bx bx-cart'></i></Link></li>
+                    <li>{onlineStatus ? "✅" : "🔴"} </li>
                     <li>
                         <Link to='/login'>
                             <button className="login-btn" onClick={() => setValue(!value)}>{value ? "Logout" : "Login"}</button>
